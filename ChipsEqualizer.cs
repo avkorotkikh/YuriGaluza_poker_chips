@@ -6,7 +6,7 @@ namespace poker_chips
 {
     class ChipsEqualizer
     {
-        public int ChipsEqualize(List<int> chips) {
+        public int ChipsEqualize(List<int> chips,int expected) {
             int count = 0;
             
             for (int j = 0; j < chips.Count; j++)
@@ -28,7 +28,7 @@ namespace poker_chips
                     }
                 }
             }
-            Console.WriteLine("chip moves = " + count);
+            Console.WriteLine($"chip moves = {count} expected {expected}");
             return count;
         }
     }
